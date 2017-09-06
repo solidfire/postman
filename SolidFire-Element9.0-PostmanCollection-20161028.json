@@ -2297,7 +2297,7 @@
 			"headers": "Content-Type: application/json",
 			"dataMode": "raw",
 			"data": [],
-			"rawModeData": "{\n\t\"method\": \"ListAsyncResults\",\n    \"params\": {\n        \"asyncResultTypes\": [\"<Optional CSV List of Result Types: One or more of BulkVolume, Clone, DriveRemoval, or RtfiPendingNode>\"]\n    },\n    \"id\": 1\n}",
+			"rawModeData": "{\n\t\"method\": \"ListAsyncResults\",\n    \"params\": {\n        \"asyncResultTypes\": [\"<Optional CSV List of Result Types: One or more of BulkVolume, Clone, DriveAdd, DriveRemoval, or RtfiPendingNode>\"]\n    },\n    \"id\": 1\n}",
 			"url": "https://{{MVIP}}/json-rpc/9.0",
 			"responses": [],
 			"folder": "98ce82cf-8028-53fb-8c92-f1390620bc02"
