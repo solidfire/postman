@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "d23e2494-a10d-46c1-a565-9a7cde789ea0",
-		"name": "SolidFire Element 11.7 - Sodium Patch 7",
+		"_postman_id": "9c684214-b7c1-46ef-a163-c6ab489a2e5a",
+		"name": "SolidFire Element 11.3 - Sodium Patch 3",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -23,14 +23,14 @@
 							"raw": "{\n\t\"method\": \"AddAccount\",\n    \"params\": {\n        \"username\": \"<Account Username>\",\n        \"initiatorSecret\": \"<Optional Initiator Secret>\",\n        \"targetSecret\": \"<Optional Target Secret>\",\n        \"attributes\": {}\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -51,14 +51,14 @@
 							"raw": "{\n\t\"method\": \"GetAccountEfficiency\",\n    \"params\": {\n        \"accountID\": <Account ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -79,14 +79,14 @@
 							"raw": "{\n\t\"method\": \"GetAccountByID\",\n    \"params\": {\n        \"accountID\": <Account ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -107,14 +107,14 @@
 							"raw": "{\n\t\"method\": \"GetAccountByName\",\n    \"params\": {\n        \"username\": \"<Account Name>\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -135,14 +135,14 @@
 							"raw": "{\n\t\"method\": \"ListAccounts\",\n    \"params\": {\n        \"startAccountID\": <Optional Account ID to start listing>,\n        \"limit\": <Optional Number of accounts to return>,\n        \"includeStorageContainers\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -163,14 +163,14 @@
 							"raw": "{\r    \"method\": \"ModifyAccount\",\r    \"params\": {\r        \"accountID\": <Account ID>,\r        \"username\": \"<Optional New Username>\",\r        \"status\": \"<Optional Account Status>\",\r        \"initiatorSecret\": \"<Optional Initiator Secret>\",\r        \"targetSecret\": \"<Optional Target Secret>\",\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -191,21 +191,20 @@
 							"raw": "{\r    \"method\": \"RemoveAccount\",\r    \"params\": {\r        \"accountID\": <Account ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Cluster Admin",
@@ -225,14 +224,14 @@
 							"raw": "{\r    \"method\": \"AddClusterAdmin\",\r    \"params\": {\r        \"username\": \"<Cluster Admin Username>\",\r        \"password\": \"<Cluster Admin Password>\",\r        \"access\": [<CSV list of quoted access levels or \"administrator\" for all>],\r        \"acceptEula\": true,\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -253,14 +252,14 @@
 							"raw": "{\r    \"method\": \"AddLdapClusterAdmin\",\r    \"params\": {\r        \"username\": \"<Cluster Admin Full Distinguished Name or Group Name from LDAP Server>\",\r        \"access\": [<CSV list of quoted access levels or \"administrator\" for all>],\r        \"acceptEula\": true,\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -281,14 +280,14 @@
 							"raw": "{\n\t\"method\": \"ListClusterAdmins\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -309,14 +308,14 @@
 							"raw": "{\r    \"method\": \"ModifyClusterAdmin\",\r    \"params\": {\r        \"clusterAdminID\": <Cluster Admin ID>,\r        \"access\": [<CSV list of quoted access levels or \"administrator\" for all>],\r        \"password\": \"<Optional Cluster Admin Password>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -337,53 +336,24 @@
 							"raw": "{\r    \"method\": \"RemoveClusterAdmin\",\r    \"params\": {\r        \"clusterAdminID\": <Cluster Admin ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Cluster Settings",
 			"item": [
-				{
-					"name": "AddKeyServerToProviderKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"method\": \"AddKeyServerToProviderKmip\",\n    \"params\": {\n    \t\"keyProviderID\": <ID of the Key Provider>,\n    \t\"keyServerID\": <ID of the Key Server to Assign>\n    },\n    \"id\": 1\n}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
 				{
 					"name": "AddVirtualNetwork",
 					"request": {
@@ -399,14 +369,14 @@
 							"raw": "{\n    \"method\": \"AddVirtualNetwork\",\n    \"params\": {\n        \"virtualNetworkTag\": <Virtual Network/VLAN Tag>,\n        \"name\": \"<Virtual Network Name>\",\n        \"addressBlocks\": [\n            {\n                \"start\": \"<First IP in Block>\",\n                \"size\": <Number of IP Addresses in this Block>\n            },\n            {\n                \"start\": \"<First IP in Block>\",\n                \"size\": <Number of IP Addresses in this Block>\n            }\n        ],\n        \"netmask\": \"<Netmask for this Virtual Network>\",\n        \"gateway\" : \"<Optional gateway address for this Virtual Network>\",\n        \"svip\": \"<SVIP for this Virtual Network>\",\n        \"namespace\": <Must be true to use overlapping IPs or a gateway>,\n        \"attributes\": {}\n    },\n    \"id\": 1\n}\n"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -427,14 +397,14 @@
 							"raw": "{\r    \"method\": \"CompleteClusterPairing\",\r    \"params\": {\r        \"clusterPairingKey\": \"<Cluster Pairing Key>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -455,98 +425,14 @@
 							"raw": "{\r    \"method\": \"CreateClusterInterfacePreference\",\r    \"params\": {\r        \"name\": \"<Name for the New Preference>\",\r        \"value\": \"<Value for the New Preference>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "CreateKeyProviderKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"method\": \"CreateKeyProviderKmip\",\n    \"params\": {\n    \t\"keyProviderName\": \"<Name of the Key Provider>\"\n    },\n    \"id\": 1\n}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "CreateKeyServerKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"method\": \"CreateKeyServerKmip\",\n    \"params\": {\n    \t\"kmipCaCertificate\": \"<The public key certificate of the external key server’s root CA>\",\n    \t\"kmipClientCertificate\": \"<A PEM PKCS#10 X.509 certificate>\",\n    \t\"kmipKeyServerHostnames\": [<Array of strings with IP or Hostname of Key Servers>],\n    \t\"kmipKeyServerName\": \"<The name of the KMIP Key Server>\",\n    \t\"kmipKeyServerPort\": \"<Optional key server port, default is 5696>\"\n    },\n    \"id\": 1\n}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "CreatePublicPrivateKeyPair",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"method\": \"CreatePublicPrivateKeyPair\",\n    \"params\": {\n    \t\"commonName\": \"<Optional Common Name (CN) string>\",\n    \t\"country\": \"<Optional Country Name (C) string>\",\n    \t\"emailAddress\": \"<Optional Email Address (MAIL) string>\",\n    \t\"locality\": \"<Optional Locality (L) string>\",\n    \t\"organization\": \"<Optional Organization (O) string>\",\n    \t\"organizationalUnit\": \"<Optional Organizational Unit (OU) string>\",\n    \t\"state\": \"<Optional State (ST, SP, or S) string>\"\n    },\n    \"id\": 1\n}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -567,85 +453,14 @@
 							"raw": "{\r    \"method\": \"DeleteClusterInterfacePreference\",\r    \"params\": {\r        \"name\": \"<Name of the Preference to be Deleted>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "DeleteKeyProviderKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"DeleteKeyProviderKmip\",\r    \"params\": {\r        \"keyProviderID\": <ID of the Key Provider to be Deleted>\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "DeleteKeyServerKmip",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "admin",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "admin",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"DeleteKeyServerKmip\",\r    \"params\": {\r        \"keyServerID\": <ID of the Key Server to be Deleted>\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -666,14 +481,14 @@
 							"raw": "{\n\t\"method\": \"DisableBmcColdReset\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -704,14 +519,14 @@
 							"raw": "{\n\t\"method\":\"DisableClusterSsh\",\n    \"params\":{\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -732,14 +547,14 @@
 							"raw": "{\n\t\"method\": \"DisableEncryptionAtRest\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -760,14 +575,14 @@
 							"raw": "{\n\t\"method\": \"DisableSnmp\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -788,14 +603,14 @@
 							"raw": "{\n\t\"method\": \"EnableBmcColdReset\",\n    \"params\": {\n    \t\"timeout\": <Time in minutes until the next BMC reset>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -826,14 +641,14 @@
 							"raw": "{\n\t\"method\":\"EnableClusterSsh\",\n    \"params\":{\n    \t\"duration\": \"<Duration to enable SSH in HH:MM:SS format>\"\n\t},\n    \"id\":\"null\"\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -851,17 +666,17 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"method\": \"EnableEncryptionAtRest\",\n    \"params\": {\n    \t\"keyProviderID\": <Optional ID of Key Provider for KMIP>\n    },\n    \"id\": 1\n}"
+							"raw": "{\n\t\"method\": \"EnableEncryptionAtRest\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -882,14 +697,14 @@
 							"raw": "{\n\t\"method\": \"EnableFeature\",\n    \"params\": {\n    \t\"feature\": \"<Feature to Enable. Possible Values: vvols, snapmirror, fips>\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Enable cluster features that are disabled by default."
@@ -911,14 +726,14 @@
 							"raw": "{\n\t\"method\": \"EnableSnmp\",\n    \"params\": {\n        \"snmpV3Enabled\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -954,42 +769,14 @@
 							"raw": "{\n\t\"method\": \"GetActiveTlsCiphers\",\n    \"params\": {\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GetClientCertficateSignRequest",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"GetClientCertificateSignRequest\",\r    \"params\": {\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1010,14 +797,14 @@
 							"raw": "{\n\t\"method\": \"GetClusterHardwareInfo\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1033,14 +820,14 @@
 							"raw": "{\n\t\"method\":\"GetClusterSshInfo\",\n    \"params\":{\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1056,14 +843,14 @@
 							"raw": "{\n\t\"method\":\"GetClusterStructure\",\n    \"params\":{\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1084,14 +871,14 @@
 							"raw": "{\n\t\"method\": \"GetClusterVersionInfo\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1116,73 +903,17 @@
 							"raw": "{\n\t\"method\": \"GetFeatureStatus\",\n    \"params\": {\n    \t\"feature\": \"<Optional feature name. Possible Values: vvols, snapmirror, fips>\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Retrieve the status of a cluster feature."
-					},
-					"response": []
-				},
-				{
-					"name": "GetKeyProviderKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"GetKeyProviderKmip\",\r    \"params\": {\r    \t\"keyProviderID\": <ID of the Key Provider to Return>\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GetKeyServerKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"GetKeyServerKmip\",\r    \"params\": {\r    \t\"keyServerID\": <ID of the Key Server to Return>\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
-							]
-						}
 					},
 					"response": []
 				},
@@ -1201,14 +932,14 @@
 							"raw": "{\n\t\"method\": \"GetLoginBanner\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1229,14 +960,14 @@
 							"raw": "{\n\t\"method\": \"GetLoginSessionInfo\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1257,14 +988,14 @@
 							"raw": "{\n\t\"method\": \"GetNtpInfo\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1285,14 +1016,14 @@
 							"raw": "{\n\t\"method\": \"GetRemoteLoggingHosts\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1313,14 +1044,14 @@
 							"raw": "{\n\t\"method\": \"GetSnmpACL\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1341,14 +1072,14 @@
 							"raw": "{\n\t\"method\": \"GetSnmpInfo\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1369,14 +1100,14 @@
 							"raw": "{\n\t\"method\": \"GetSnmpState\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1397,14 +1128,14 @@
 							"raw": "{\n\t\"method\": \"GetSnmpTrapInfo\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1425,14 +1156,14 @@
 							"raw": "{\n\t\"method\": \"GetSSLCertificate\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1468,14 +1199,14 @@
 							"raw": "{\n\t\"method\": \"GetSupportedTlsCiphers\",\n    \"params\": {\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1496,14 +1227,14 @@
 							"raw": "{\r    \"method\": \"ListClusterInterfacePreferences\",\r    \"params\": { },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1524,70 +1255,14 @@
 							"raw": "{\n\t\"method\": \"ListClusterPairs\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "ListKeyProvidersKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"ListKeyProvidersKmip\",\r    \"params\": {\r    \t\"keyProviderIsActive\": <Optional Boolean True or False>,\r    \t\"kmipKeyProviderHasServerAssigned\": <Optional Boolean True or False>\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "ListKeyServersKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"ListKeyServersKmip\",\r    \"params\": {\r    \t\"keyProviderID\": <Optional Key Provider ID>,\r    \t\"kmipAssignedProviderIsActive\": <Optional Boolean True or False>,\r    \t\"kmipHasProviderAssigned\": <Optional Boolean True or False>\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1608,14 +1283,14 @@
 							"raw": "{\r    \"method\": \"ListProtectionDomainLevels\",\r    \"params\": { },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1636,14 +1311,14 @@
 							"raw": "{\n\t\"method\": \"ListServices\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1664,14 +1339,14 @@
 							"raw": "{\n\t\"method\": \"ListVirtualNetworks\",\n    \"params\": {\n        \"virtualNetworkID\": <Optional Virtual Network ID>,\n        \"virtualNetworkTag\": <Optional Virtual Network Tag>,\n        \"virtualNetworkIDs\": [<Optional CSV List of Virtual Network IDs>],\n        \"virtualNetworkTags\": [<Optional CSV List of Virtual Network Tags>]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1692,14 +1367,14 @@
 							"raw": "{\r    \"method\": \"ModifyClusterFullThreshold\",\r    \"params\": {\r        \"stage2AwareThreshold\": <Number of Nodes of Capacity Remaining Before Warning>,\r        \"stage3BlockThresholdPercent\": <Percentage of Block Storage Usage Below the Error Threshold Before Warning>,\r        \"maxMetadataOverProvisionFactor\": <Optional Metadata Multiplier Times Actual Space Available>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1720,42 +1395,14 @@
 							"raw": "{\r    \"method\": \"ModifyClusterInterfacePreference\",\r    \"params\": {\r        \"name\": \"<Name of the Preference to Modify>\",\r        \"value\": \"<New Value for the Preference>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "ModifyKeyServerKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"method\": \"ModifyKeyServerKmip\",\n    \"params\": {\n    \t\"keyServerID\": <ID ofthe Key Server to Modify>,\n    \t\"kmipCaCertificate\": \"<Optional Public key certificate of the external key server’s root CA>\",\n    \t\"kmipClientCertificate\": \"<Optional PEM PKCS#10 X.509 certificate>\",\n    \t\"kmipKeyServerHostnames\": [<Optional Array of strings with IP or Hostname of Key Servers>],\n    \t\"kmipKeyServerName\": \"<Optional Name of the KMIP Key Server>\",\n    \t\"kmipKeyServerPort\": \"<Optional key server port, default is 5696>\"\n    },\n    \"id\": 1\n}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1776,14 +1423,14 @@
 							"raw": "{\n    \"method\": \"ModifyVirtualNetwork\",\n    \"params\": {\n    \t\"virtualNetworkID\": <Virtual Network ID>,\n        \"name\": \"<Optional Virtual Network Name>\",\n        \"addressBlocks\": [\n            {\n                \"start\": \"<Optional Starting IP Address>\",\n                \"size\": <Optional Block Size>\n            }\n        ],\n        \"netmask\": \"<Optional Netmask>\",\n        \"gateway\": \"<Optional Gateway IP Address>\",\n        \"svip\": \"<Optional SVIP>\",\n        \"attributes\": {}\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1804,14 +1451,14 @@
 							"raw": "{\n    \"method\": \"ModifyVirtualNetwork\",\n    \"params\": {\n        \"virtualNetworkTag\": <Virtual Network/VLAN Tag>,\n        \"name\": \"<Optional Virtual Network Name>\",\n        \"addressBlocks\": [\n            {\n                \"start\": \"<Optional Starting IP Address>\",\n                \"size\": <Optional Block Size>\n            }\n        ],\n        \"netmask\": \"<Optional Netmask>\",\n        \"gateway\": \"<Optional Gateway IP Address>\",\n        \"svip\": \"<Optional SVIP>\",\n        \"attributes\": {}\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1832,42 +1479,14 @@
 							"raw": "{\r    \"method\": \"RemoveClusterPair\",\r    \"params\": {\r        \"clusterPairID\": <Cluster Pair ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "RemoveKeyServerFromProviderKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"method\": \"RemoveKeyServerFromProviderKmip\",\n    \"params\": {\n    \t\"keyServerID\": <ID of the Key Server to Unassign>\n    },\n    \"id\": 1\n}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1888,14 +1507,14 @@
 							"raw": "{\r    \"method\": \"RemoveSSLCertificate\",\r    \"params\": {\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1916,14 +1535,14 @@
 							"raw": "{\r    \"method\": \"RemoveVirtualNetwork\",\r    \"params\": {\r        \"virtualNetworkID\": <Virtual Network ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1944,14 +1563,14 @@
 							"raw": "{\r    \"method\": \"RemoveVirtualNetwork\",\r    \"params\": {\r        \"virtualNetworkTag\": <Virtual Network/VLAN Tag>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -1987,14 +1606,14 @@
 							"raw": "{\n   \"method\": \"ResetSupplementalTlsCiphers\",\n   \"params\": {\n   },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2025,14 +1644,14 @@
 							"raw": "{\n\t\"method\":\"SetClusterStructure\",\n    \"params\":{\n\t\t<Cluster Structure Object from GetClusterStructure>\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2053,14 +1672,14 @@
 							"raw": "{\r    \"method\": \"SetLoginBanner\",\r    \"params\": {\r        \"banner\": \"<Optional login/terms of use banner message>\",\r        \"enabled\": <Optional boolean true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2081,14 +1700,14 @@
 							"raw": "{\r    \"method\": \"SetLoginSessionInfo\",\r    \"params\": {\r        \"timeout\": \"<Timeout value in HH:MM:SS>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2109,14 +1728,14 @@
 							"raw": "{\r    \"method\": \"SetNtpInfo\",\r    \"params\": {\r        \"servers\": [<CSV List of Quoted NTP Servers>],\r        \"broadcastclient\": <Boolean true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2137,14 +1756,14 @@
 							"raw": "{\n\t\"method\": \"SetSnmpACL\",\n    \"params\": {\n        \"networks\": [\n            {\n                \"community\": \"<SNMP Community String>\",\n                \"access\": \"<Access Level>\",\n                \"network\": \"<A.B.C.D Network Address>\",\n                \"cidr\": <Integer Representation of CIDR Netmask>\n            },\n            {\n                \"<Optional Additional SNMP Network Object>\"\n            }\n        ],\n        \"usmUsers\": [\n            {\n                \"access\": \"<Access Level>\",\n                \"name\": \"<SNMP User Name>\",\n                \"passphrase\": \"<SNMP User Passphrase>\",\n                \"password\": \"<SNMP User Password>\",\n                \"secLevel\": \"<Security Level>\"\n            }\n        ]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2165,14 +1784,14 @@
 							"raw": "{\r    \"method\": \"SetSnmpInfo\",\r    \"params\": {\r        \"networks\": [\r            {\r                \"community\": \"<SNMP Community String>\",\r                \"access\": \"<Access Level>\",\r                \"network\": \"<A.B.C.D Network Address>\",\r                \"cidr\": <Integer Representation of CIDR Netmask>\r            },\r            {\r                \"<Optional Additional SNMP Network Object>\"\r            }\r        ],\r        \"usmUsers\": [\r            {\r                \"access\": \"<Access Level>\",\r                \"name\": \"<SNMP User Name>\",\r                \"passphrase\": \"<SNMP User Passphrase>\",\r                \"password\": \"<SNMP User Password>\",\r                \"secLevel\": \"<Security Level>\"\r            }\r        ],\r        \"enabled\": <Boolean true or false>,\r        \"snmpV3Enabled\": <Boolean true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2193,14 +1812,14 @@
 							"raw": "{ \n    \"method\": \"SetSnmpTrapInfo\",\n    \"params\": {\n        \"trapRecipients\": [\n            {\n                \"host\": \"<SNMP Trap Receiver IP or Hostname>\",\n                \"port\": <SNMP Trap Receiver Port>,\n                \"community\": \"<SNMP Community String>\"\n            },\n            {<Optional Additional SNMP Receiver, Port and Community>}\n        ],\n        \"clusterFaultTrapsEnabled\": <Boolean true or false>,\n        \"clusterFaultResolvedTrapsEnabled\": <Boolean true or false>,\n        \"clusterEventTrapsEnabled\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2225,14 +1844,14 @@
 							"raw": "{ \n    \"method\": \"SetSSLCertificate\",\n    \"params\": {\n    \t\"certificate\": \"<SSL Certificate>\",\n    \t\"privateKey\": \"<SSL Private Key>\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2253,14 +1872,14 @@
 							"raw": "{\r    \"method\": \"SetRemoteLoggingHosts\",\r    \"params\": {\r        \"remoteHosts\": [\r            {\r                \"host\": \"<IP Address of Remote Logging Host>\",\r                \"port\": <Remote Logging Port Number>\r            },\r            {\r                \"host\": \"<Optional IP Address of Remote Logging Host>\",\r                \"port\": <Optional Remote Logging Port Number>\r            }\r        ]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2296,14 +1915,14 @@
 							"raw": "{\n   \"method\": \"SetSupplementalTlsCiphers\",\n   \"params\": {\n      \"supplementalCiphers\": [ <CSV List of quoted ciphers from GetSupportedTlsCiphers> ]\n   },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2324,14 +1943,14 @@
 							"raw": "{\r    \"method\": \"Shutdown\",\r    \"params\": {\r        \"nodes\": [<CSV List of Node IDs>],\r        \"option\": \"<Either halt or restart>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2352,14 +1971,14 @@
 							"raw": "{\n\t\"method\": \"SnmpSendTestTraps\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2380,77 +1999,20 @@
 							"raw": "{\r    \"method\": \"StartClusterPairing\",\r    \"params\": {},\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "TestKeyProviderKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"TestKeyProviderKmip\",\r    \"params\": {\r    \t\"keyProviderID\": <ID of the Key Provider to Test>\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "TestKeyServerKmip",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r    \"method\": \"TestKeyServerKmip\",\r    \"params\": {\r    \t\"keyServerID\": <ID of the Key Server to Test>\r    },\r    \"id\": 1\r}"
-						},
-						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{MVIP}}"
-							],
-							"path": [
-								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Create Cluster",
@@ -2470,14 +2032,14 @@
 							"raw": "{\r    \"method\": \"CreateCluster\",\r    \"params\": {\r        \"acceptEula\": true,\r        \"mvip\": \"<Cluster MVIP>\",\r        \"svip\": \"<Cluster SVIP>\",\r        \"repCount\": 2,\r        \"username\": \"<Cluster Admin Username>\",\r        \"password\": \"<Cluster Admin Password>\",\r        \"attributes\": {},\r        \"nodes\": [<CSV List of Quoted Node Storage IP Addresses>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2513,14 +2075,14 @@
 							"raw": "{\n\t\"method\": \"GetAPI\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2541,21 +2103,20 @@
 							"raw": "{\r    \"method\": \"GetBootstrapConfig\",\r    \"params\": {},\r    \"id\" : 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Drives",
@@ -2575,14 +2136,14 @@
 							"raw": "{\n\t\"method\": \"AddDrives\",\n    \"params\": {\n        \"drives\": [\n            {\n            \t\"driveID\": <Drive ID>,\n            \t\"type\": \"<slice or block>\"\n            },\n            {\n            \t\"driveID\": <Drive ID> \n            \t\"type\": \"<slice or block>\"\n            }\n        ],\n        \"forceDuringBinSync\": <Optional boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2603,14 +2164,14 @@
 							"raw": "{\n\t\"method\": \"GetDriveHardwareInfo\",\n    \"params\": {\n        \"driveID\": <Drive ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2631,14 +2192,14 @@
 							"raw": "{\n\t\"method\": \"GetDriveStats\",\n    \"params\": {\n        \"driveID\": <Drive ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2659,14 +2220,14 @@
 							"raw": "{\n\t\"method\": \"ListDrives\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2687,14 +2248,14 @@
 							"raw": "{\n\t\"method\": \"ListDriveStats\",\n    \"params\": {\n        \"drives\": [<Optional CSV List of Drive IDs>]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Retrieve high-level activity measurements for multiple drives in the cluster."
@@ -2716,14 +2277,14 @@
 							"raw": "{\r    \"method\": \"RemoveDrives\",\r    \"params\": {\r        \"drives\": [<CSV List of Drive IDs>],\r        \"forceDuringBinSync\": <Optional boolean true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2744,21 +2305,20 @@
 							"raw": "{\r    \"method\": \"SecureEraseDrives\",\r    \"params\": {\r        \"drives\": [<CSV List of Drive IDs>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "LDAP",
@@ -2778,14 +2338,14 @@
 							"raw": "{\n\t\"method\": \"TestLdapAuthentication\",\n    \"params\": {\n    \t\"username\": \"<LDAP Account Username to Test>\",\n        \"password\": \"<LDAP Account Password to Test>\",\n        \"ldapConfiguration\": {\n            \"authType\": \"SearchAndBind\",\n            \"groupSearchBaseDN\": \"<Base Distinguished Name for Group Search>\",\n            \"groupSearchType\": \"ActiveDirectory\",\n            \"searchBindDN\": \"<Read Only LDAP Account Distinguished Name>\",\n            \"searchBindPassword\": \"<Read Only LDAP Account Password>\",\n            \"userSearchBaseDN\": \"<Base Distinguished Name for User Search>\",\n            \"userSearchFilter\": \"(&(objectClass=person)(sAMAccountName=%USERNAME%))\",\n            \"serverURIs\": [\n                \"<LDAP Server 1 - IP Address>\",\n                \"<LDAP Server 2 - IP Address>\",\n                \"<LDAP Server 3 - IP Address>\",\n                \"<LDAP Server 4 - IP Address>\"\n            ]\n        }\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2806,14 +2366,14 @@
 							"raw": "{\n\t\"method\": \"DisableLdapAuthentication\",\n\t\"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2834,14 +2394,14 @@
 							"raw": "{\n\t\"method\": \"TestLdapAuthentication\",\n    \"params\": {\n    \t\"username\": \"<LDAP Account Full Distinguished Name to Test>\",\n        \"password\": \"<LDAP Account Password to Test>\"\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2862,14 +2422,14 @@
 							"raw": "{\n\t\"method\": \"TestLdapAuthentication\",\n    \"params\": {\n    \t\"username\": \"<LDAP Account Username to Test>\",\n        \"password\": \"<LDAP Account Password to Test>\"\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2890,14 +2450,14 @@
 							"raw": "{\n    \"method\": \"GetLdapConfiguration\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2918,14 +2478,14 @@
 							"raw": "{\n\t\"method\": \"EnableLdapAuthentication\",\n    \"params\": {\n    \t\"authType\": \"DirectBind\",\n        \"groupSearchBaseDN\": \"<Base Distinguished Name for Group Search>\",\n        \"groupSearchType\": \"ActiveDirectory\",\n        \"serverURIs\": [\n            \"<LDAP Server 1 - IP Address>\",\n            \"<LDAP Server 2 - IP Address>\",\n            \"<LDAP Server 3 - IP Address>\",\n            \"<LDAP Server 4 - IP Address>\"\n        ],\n        \"userDNTemplate\": \"<LDAP User Distinguished Name Template>\"\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -2946,21 +2506,20 @@
 							"raw": "{\n    \"method\": \"EnableLdapAuthentication\",\n    \"params\": {\n        \"authType\": \"SearchAndBind\",\n        \"groupSearchBaseDN\": \"<Base Distinguished Name for Group Search>\",\n        \"groupSearchType\": \"ActiveDirectory\",\n        \"searchBindDN\": \"<Read Only LDAP Account Distinguished Name>\",\n        \"searchBindPassword\": \"<Read Only LDAP Account Password>\",\n        \"userSearchBaseDN\": \"<Base Distinguished Name for User Search>\",\n        \"userSearchFilter\": \"(&(objectClass=person)(sAMAccountName=%USERNAME%))\",\n        \"serverURIs\": [\n            \"<LDAP Server 1 - IP Address>\",\n            \"<LDAP Server 2 - IP Address>\",\n            \"<LDAP Server 3 - IP Address>\",\n            \"<LDAP Server 4 - IP Address>\"\n        ]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Management Node",
@@ -2980,14 +2539,14 @@
 							"raw": "{\r    \"method\": \"CreateClusterSupportBundle\",\r    \"params\": {\r        \"mvip\": \"<MVIP of Cluster - Either mvip or nodes is required>\",\r        \"nodes\": \"<CSV List of Node IP Addresses>\",\r        \"username\": \"<Cluster Admin Username>\",\r        \"password\": \"<Cluster Admin Password>\",\r        \"allowIncomplete\": <Optional Boolean true or false>,\r        \"bundleName\": \"<Optional Custom name for the support bundle>\",\r        \"extraArgs\": \"<Optional additional arguments>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{mNode}}/json-rpc/11.7",
+							"raw": "https://{{mNode}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{mNode}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3023,7 +2582,7 @@
 							"raw": "{\n\t\"method\": \"GetAPI\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{mNodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{mNodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{mNodeIP}}"
@@ -3031,7 +2590,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3052,14 +2611,14 @@
 							"raw": "{\n\t\"method\": \"GetNodeSSLCertificate\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3080,14 +2639,14 @@
 							"raw": "{\r    \"method\": \"RemoveSSLCertificate\",\r    \"params\": { },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3112,21 +2671,20 @@
 							"raw": "{ \n    \"method\": \"SetNodeSSLCertificate\",\n    \"params\": {\n    \t\"certificate\": \"<SSL Certificate>\",\n    \t\"privateKey\": \"<SSL Private Key>\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Nodes",
@@ -3146,14 +2704,14 @@
 							"raw": "{\r    \"method\": \"AddNodes\",\r    \"params\": {\r        \"pendingNodes\": [<CSV List of Pending Node IDs>],\r        \"autoInstall\" : <Optional boolean true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3174,14 +2732,14 @@
 							"raw": "{\r    \"method\": \"CheckProposedNodeAdditions\",\r    \"params\": {\r        \"nodes\": [<CSV List of Node Storage IPs>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3202,14 +2760,14 @@
 							"raw": "{\n\t\"method\": \"GetClusterMasterNodeID\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3230,14 +2788,14 @@
 							"raw": "{\n\t\"method\": \"GetNodeHardwareInfo\",\n    \"params\": {\n        \"nodeID\": <Node ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3258,14 +2816,14 @@
 							"raw": "{\n\t\"method\": \"GetNodeStats\",\n    \"params\": {\n        \"nodeID\": <Node ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3286,14 +2844,14 @@
 							"raw": "{\n\t\"method\": \"GetSystemStatus\",\n    \"params\": {\n        \"force\": true\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3314,14 +2872,14 @@
 							"raw": "{\n\t\"method\": \"ListActiveNodes\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3342,14 +2900,14 @@
 							"raw": "{\n\t\"method\": \"ListAllNodes\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3370,14 +2928,14 @@
 							"raw": "{\n\t\"method\": \"ListNodeStats\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3398,14 +2956,14 @@
 							"raw": "{\n\t\"method\": \"ListPendingActiveNodes\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "List all nodes in the cluster that are currently in the PendingActive state."
@@ -3427,14 +2985,14 @@
 							"raw": "{\n\t\"method\": \"ListPendingNodes\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3455,14 +3013,14 @@
 							"raw": "{\r    \"method\": \"RemoveNodes\",\r    \"params\": {\r        \"nodes\": [<CSV List of Node IDs>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3483,21 +3041,20 @@
 							"raw": "{\n\t\"method\": \"ListNodeFibreChannelPortInfo\",\n    \"params\": {\n        \"force\": true\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Per Node",
@@ -3517,7 +3074,7 @@
 							"raw": "{\r    \"method\": \"CheckPingOnVlan\",\r    \"params\": {\r        \"hosts\": \"<CSV String of IP Addresses>\",\r        \"interface\": \"<Existing interface on which the temporary vlan interface is created>\",\r        \"sourceAddressV4\": \"<Source IPv4 Address - v4 or v6 Address is Required>\",\r        \"sourceAddressV6\": \"<Source IPv6 Address - v4 or v6 Address is Required>\",\r        \"virtualNetworkTag\": \"<VLAN on which pings will be tested>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3525,7 +3082,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3546,7 +3103,7 @@
 							"raw": "{\r    \"method\": \"CheckProposedCluster\",\r    \"params\": {\r        \"nodes\": [<List of node storage IPs that will comprise the proposed cluster>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3554,7 +3111,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3575,7 +3132,7 @@
 							"raw": "{\r    \"method\": \"CreateSupportBundle\",\r    \"params\": {\r        \"bundleName\": \"<Optional custom name for the support bundle>\",\r        \"extraArgs\": \"<Optional additional arguments>\",\r        \"timeoutSec\": <Optional timeout for the support bundle process in seconds>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3583,7 +3140,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3604,7 +3161,7 @@
 							"raw": "{\r    \"method\": \"ControlPower\",\r    \"params\": {\r        \"action\": \"<Either Halt or Restart>\",\r        \"wakeupDelay\": <Delay in seconds to wait for power on.  Only usable with Halt option>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3612,7 +3169,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3633,7 +3190,7 @@
 							"raw": "{\r    \"method\": \"DeleteAllSupportBundles\",\r    \"params\": { },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3641,7 +3198,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3672,7 +3229,7 @@
 							"raw": "{\n\t\"method\":\"DisableAutoip\",\n    \"params\":{ },\n    \"id\":\"null\"\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3680,7 +3237,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3711,7 +3268,7 @@
 							"raw": "{\n\t\"method\":\"DisableSsh\",\n    \"params\":{ },\n    \"id\":\"null\"\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3719,7 +3276,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3750,7 +3307,7 @@
 							"raw": "{\n\t\"method\":\"EnableAutoip\",\n    \"params\":{ },\n    \"id\":\"null\"\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3758,7 +3315,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3789,7 +3346,7 @@
 							"raw": "{\n\t\"method\":\"EnableSsh\",\n    \"params\":{\n    \t\"duration\": \"<Duration to enable SSH in HH:MM:SS format>\"\n\t},\n    \"id\":\"null\"\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3797,7 +3354,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3833,7 +3390,7 @@
 							"raw": "{\n\t\"method\": \"GetAPI\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3841,7 +3398,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3862,7 +3419,7 @@
 							"raw": "{\n\t\"method\": \"GetClusterConfig\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3870,7 +3427,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3891,7 +3448,7 @@
 							"raw": "{\n\t\"method\": \"GetClusterState\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3899,7 +3456,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3920,7 +3477,7 @@
 							"raw": "{\n\t\"method\": \"GetConfig\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3928,7 +3485,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3949,7 +3506,7 @@
 							"raw": "{\n\t\"method\": \"GetDriveConfig\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3957,7 +3514,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -3978,7 +3535,7 @@
 							"raw": "{\n\t\"method\": \"GetHardwareConfig\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -3986,7 +3543,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4007,7 +3564,7 @@
 							"raw": "{\n\t\"method\": \"GetHardwareInfo\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4015,7 +3572,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Return hardware information and status for a single node."
@@ -4037,7 +3594,7 @@
 							"raw": "{\n\t\"method\": \"GetIpmiConfig\",\n    \"params\": {\n        \"chassisType\": \"all\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4045,7 +3602,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4066,7 +3623,7 @@
 							"raw": "{\n\t\"method\": \"GetIpmiInfo\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4074,7 +3631,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4105,7 +3662,7 @@
 							"raw": "{\n\t\"method\":\"GetLldpConfig\",\n    \"params\":{\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4113,7 +3670,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4144,7 +3701,7 @@
 							"raw": "{\n\t\"method\":\"GetLldpInfo\",\n    \"params\":{\n\t},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4152,7 +3709,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4173,7 +3730,7 @@
 							"raw": "{\n\t\"method\": \"GetNetworkConfig\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4181,7 +3738,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4202,7 +3759,7 @@
 							"raw": "{\r    \"method\": \"GetNetworkInterface\",\r    \"params\": {\r        \"interface\": \"<Interface Name>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4210,7 +3767,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4246,7 +3803,7 @@
 							"raw": "{\n\t\"method\": \"GetNodeActiveTlsCiphers\",\n    \"params\": {\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4254,51 +3811,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GetNodeFipsDrivesReport",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "solidfire",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "admin",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"method\": \"GetNodeFipsDrivesReport\",\n    \"params\": {\n    },\n    \"id\": 1\n}"
-						},
-						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
-							"protocol": "https",
-							"host": [
-								"{{NodeIP}}"
-							],
-							"port": "442",
-							"path": [
-								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4334,7 +3847,7 @@
 							"raw": "{\n\t\"method\": \"GetNodeSupportedTlsCiphers\",\n    \"params\": {\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4342,7 +3855,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4363,7 +3876,7 @@
 							"raw": "{\n\t\"method\": \"GetOrigin\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4371,7 +3884,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4392,7 +3905,7 @@
 							"raw": "{\n\t\"method\": \"GetPendingOperation\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4400,7 +3913,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4421,7 +3934,7 @@
 							"raw": "{\n\t\"method\": \"GetProcessInfo\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4429,7 +3942,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4460,7 +3973,7 @@
 							"raw": "{\n\t\"method\":\"GetSshInfo\",\n    \"params\":{ },\n    \"id\":\"null\"\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4468,7 +3981,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4499,7 +4012,7 @@
 							"raw": "{\n\t\"method\":\"GetSystemStatus\",\n    \"params\":{ },\n    \"id\":\"null\"\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4507,7 +4020,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4528,7 +4041,7 @@
 							"raw": "{\n\t\"method\": \"ListCoreFiles\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4536,7 +4049,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4557,7 +4070,7 @@
 							"raw": "{\n\t\"method\": \"ListDriveHardware\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4565,7 +4078,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4586,7 +4099,7 @@
 							"raw": "{\n\t\"method\": \"ListNetworkInterfaces\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4594,7 +4107,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4615,7 +4128,7 @@
 							"raw": "{\n\t\"method\": \"ListNodeFibreChannelPortInfo\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4623,7 +4136,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4644,7 +4157,7 @@
 							"raw": "{\n\t\"method\": \"ListTests\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4652,7 +4165,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4673,7 +4186,7 @@
 							"raw": "{\n\t\"method\": \"ListUtilities\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4681,7 +4194,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4702,7 +4215,7 @@
 							"raw": "{\r    \"method\": \"ResetDrives\",\r    \"params\": {\r        \"drives\": \"<Drive Name (e.g. slot9)>\",\r        \"force\": true\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4710,7 +4223,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4731,7 +4244,7 @@
 							"raw": "{\r    \"method\": \"ResetNetworkConfig\",\r    \"params\": {},\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4739,7 +4252,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4760,7 +4273,7 @@
 							"raw": "{\r    \"method\": \"ResetNode\",\r    \"params\": {\r        \"force\": true,\r        \"build\": \"<Optional URL of image to build>\",\r        \"options\": {<Optional options to pass to the reset operation>}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4768,7 +4281,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4804,7 +4317,7 @@
 							"raw": "{\n   \"method\": \"ResetNodeSupplementalTlsCiphers\",\n   \"params\": {\n   },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4812,7 +4325,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4833,7 +4346,7 @@
 							"raw": "{\r    \"method\": \"RestartNetworking\",\r    \"params\": {\r        \"force\": true\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4841,7 +4354,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4862,7 +4375,7 @@
 							"raw": "{\r    \"method\": \"RestartServices\",\r    \"params\": {\r        \"force\": true\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4870,7 +4383,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4891,7 +4404,7 @@
 							"raw": "{\r    \"method\": \"SetClusterConfig\",\r    \"params\": {\r        \"cluster\": {<JSON Object Indicating Parameters to be Changed>}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4899,7 +4412,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4920,7 +4433,7 @@
 							"raw": "{\r    \"method\": \"SetConfig\",\r    \"params\": {\r        \"config\": {<JSON Object Indicating Parameters to be Changed>}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4928,7 +4441,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4959,7 +4472,7 @@
 							"raw": "{\n\t\"method\":\"SetLldpConfig\",\n    \"params\": {\n        \"lldpConfig\": {\n        \t\"enableLldp\": <Boolean true or false, default true>,\n        \t\"enableMed\": <Boolean true or false, default false>,\n        \t\"enableOtherProtocols\": <Boolean true or false, default true>\n        }\n    }\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4967,7 +4480,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -4988,7 +4501,7 @@
 							"raw": "{\r    \"method\": \"SetNetworkConfig\",\r    \"params\": {\r        \"network\": {<JSON Object Indicating Parameters to be Changed>}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -4996,7 +4509,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5032,7 +4545,7 @@
 							"raw": "{\n   \"method\": \"SetNodeSupplementalTlsCiphers\",\n   \"params\": {\n      \"supplementalCiphers\": [ <CSV List of quoted ciphers from GetSupportedTlsCiphers> ]\n   },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5040,7 +4553,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5076,7 +4589,7 @@
 							"raw": "{\r    \"method\": \"TestAddressAvailability\",\r    \"params\": {\r        \"interface\": \"<Target network interface>\",\r        \"address\": \"<IP address to be tested>\",\r        \"virtualNetworkTag\": <Optional VLAN tag>,\r        \"timeout\": <Optional timeout in seconds, default is 5>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5084,7 +4597,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5105,7 +4618,7 @@
 							"raw": "{\r    \"method\": \"TestConnectEnsemble\",\r    \"params\": {\r        \"ensemble\": \"<Optional CSV list of Node Cluster IPs>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5113,7 +4626,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5134,7 +4647,7 @@
 							"raw": "{\r    \"method\": \"TestConnectMvip\",\r    \"params\": {\r        \"mvip\": \"<Optional Cluster MVIP>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5142,7 +4655,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5163,7 +4676,7 @@
 							"raw": "{\r    \"method\": \"TestConnectSvip\",\r    \"params\": {\r        \"svip\": \"<Optional Cluster SVIP>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5171,7 +4684,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5192,7 +4705,7 @@
 							"raw": "{\r    \"method\": \"TestDrives\",\r    \"params\": {\r        \"force\": true,\r        \"minutes\": <Minutes to Run Test>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5200,7 +4713,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5221,7 +4734,7 @@
 							"raw": "{\r    \"method\": \"TestHardwareConfig\",\r    \"params\": {\r        \"force\": true,\r        \"clean\": <Optional boolean true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5229,7 +4742,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5250,7 +4763,7 @@
 							"raw": "{\r    \"method\": \"TestLocalConnectivity\",\r    \"params\": {},\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5258,7 +4771,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5279,7 +4792,7 @@
 							"raw": "{\r    \"method\": \"TestLocateCluster\",\r    \"params\": {},\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5287,7 +4800,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5308,7 +4821,7 @@
 							"raw": "{\r    \"method\": \"TestNetworkConfig\",\r    \"params\": {},\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5316,7 +4829,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5337,7 +4850,7 @@
 							"raw": "{\r    \"method\": \"TestPing\",\r    \"params\": {\r        \"attempts\": <Number of Pings to Attempt>,\r        \"hosts\": \"<CSV List of IP Addresses>\",\r        \"totalTimeoutSec\": <Test Timeout in Sec>,\r        \"packetSize\": <Ping Packet Size in Bytes>,\r        \"pingTimeoutMSec\": <Per Ping Timeout in MSec>,\r        \"prohibitFragmentation\": <Boolean true or false to set the DF flag>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5345,7 +4858,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5366,7 +4879,7 @@
 							"raw": "{\r    \"method\": \"TestRemoteConnectivity\",\r    \"params\": { },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5374,7 +4887,7 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5395,7 +4908,7 @@
 							"raw": "{\n\t\"method\": \"GetNvramInfo\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{NodeIP}}:442/json-rpc/11.7",
+							"raw": "https://{{NodeIP}}:442/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{NodeIP}}"
@@ -5403,14 +4916,13 @@
 							"port": "442",
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Reporting",
@@ -5430,14 +4942,14 @@
 							"raw": "{\n\t\"method\": \"ClearClusterFaults\",\n    \"params\": {\n        \"faultTypes\": \"<Optional faults to be cleared: current, resolved or all>\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5458,14 +4970,14 @@
 							"raw": "{\n\t\"method\": \"GetAPI\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5486,14 +4998,14 @@
 							"raw": "{\n\t\"method\": \"GetAsyncResult\",\n    \"params\": {\n        \"asyncHandle\": <Async Handle ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5514,14 +5026,14 @@
 							"raw": "{\n\t\"method\": \"GetClusterCapacity\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5542,14 +5054,14 @@
 							"raw": "{\n\t\"method\": \"GetCompleteStats\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5570,14 +5082,14 @@
 							"raw": "{\n\t\"method\": \"GetClusterFullThreshold\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5598,14 +5110,14 @@
 							"raw": "{\n\t\"method\": \"GetClusterInfo\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5626,14 +5138,14 @@
 							"raw": "{\n\t\"method\": \"GetClusterStats\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5654,14 +5166,14 @@
 							"raw": "{\n\t\"method\": \"GetCurrentClusterAdmin\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5682,14 +5194,14 @@
 							"raw": "{\n\t\"method\": \"GetDefaultQoS\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5725,14 +5237,14 @@
 							"raw": "{\n\t\"method\": \"GetFipsReport\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5753,14 +5265,14 @@
 							"raw": "{\n\t\"method\": \"GetLimits\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5781,14 +5293,14 @@
 							"raw": "{\n\t\"method\": \"GetNvramInfo\",\n    \"params\": {\n        \"force\": true\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5809,14 +5321,14 @@
 							"raw": "{\n\t\"method\": \"GetRawStats\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5837,14 +5349,14 @@
 							"raw": "{\n\t\"method\": \"ListAsyncResults\",\n    \"params\": {\n        \"asyncResultTypes\": [\"<Optional CSV List of Result Types: One or more of BulkVolume, Clone, DriveAdd, DriveRemoval, or RtfiPendingNode>\"]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "List the results of all currently running and completed asynchronous methods on the system."
@@ -5866,14 +5378,14 @@
 							"raw": "{\n\t\"method\": \"ListBulkVolumeJobs\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5894,14 +5406,14 @@
 							"raw": "{\n\t\"method\": \"ListClusterFaults\",\n    \"params\": {\n    \t\"bestPractices\": <Optionally include best practices faults: Boolean true or false>,\n        \"faultTypes\": \"<Optional: current, resolved or all>\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5922,14 +5434,14 @@
 							"raw": "{\n\t\"method\": \"ListFibreChannelPortInfo\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5950,14 +5462,14 @@
 							"raw": "{\n\t\"method\": \"ListFibreChannelSessions\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -5978,14 +5490,14 @@
 							"raw": "{\n\t\"method\": \"ListEvents\",\n    \"params\": {\n        \"startEventID\": <Optional First Event ID to Return>,\n        \"endEventID\": <Optional Last Event ID to Return [Default Unlimited]>,\n        \"maxEvents\": <Optional number of events to return>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6006,14 +5518,14 @@
 							"raw": "{\n\t\"method\": \"ListISCSISessions\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6034,14 +5546,14 @@
 							"raw": "{\n\t\"method\": \"ListSyncJobs\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6077,21 +5589,20 @@
 							"raw": "{\n\t\"method\": \"ListVolumeQoSHistograms\",\n    \"params\": {\n    \t\"volumeIDs\": [<Optional list of volume IDs>]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Volumes",
@@ -6111,14 +5622,14 @@
 							"raw": "{\n    \"method\": \"AddInitiatorsToVolumeAccessGroup\",\n    \"params\": {\n        \"volumeAccessGroupID\": <Volume Access Group ID>,\n        \"initiators\": [<CSV List of Initiator IDs (integers) or Quoted IQNs or WWPNs (strings, deprecated)>]\n    },\n    \"id : 1\n}\n"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6139,14 +5650,14 @@
 							"raw": "{\n    \"method\": \"AddVolumesToVolumeAccessGroup\",\n    \"params\": {\n        \"volumeAccessGroupID\": <Volume Access Group ID>,\n        \"volumes\": [<CSV List of Volume IDs>]\n    },\n    \"id\": 1\n}\n"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6167,14 +5678,14 @@
 							"raw": "{\r    \"method\": \"CancelClone\",\r    \"params\": {\r        \"cloneID\": <Clone ID for the Ongoing Clone Process>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6195,14 +5706,14 @@
 							"raw": "{\r    \"method\": \"CancelGroupClone\",\r    \"params\": {\r        \"groupCloneID\": <Group Clone ID for the Ongoing Group Clone Process>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Stop an ongoing clone process for a group of volumes."
@@ -6224,14 +5735,14 @@
 							"raw": "{\r    \"method\": \"CloneMultipleVolumes\",\r    \"params\": {\r        \"volumes\": [\r            {\r                \"volumeID\": <Volume ID>\r                \"name\": \"<Optional Clone Volume Name>\",\r                \"access\": \"<Optional Clone Volume Access Level>\",\r                \"newAccountID\": \"<Optional New Account ID>\",\r                \"newSize\": \"<Optional New Clone Volume Size in Bytes>\",\r                \"attributes\": {}\r            },\r            {\r                \"volumeID\": <Volume ID>\r            },\r            {\r                \"volumeID\": <Volume ID>\r            }\r        ],\r        \"access\": \"<Optional Clone Volume Access Level>\",\r        \"groupSnapshotID\": <Optional Group Snapshot to be used as the source for the clone>,\r        \"newAccountID\": <Optional ID of the Account for the new clone volumes>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6252,14 +5763,14 @@
 							"raw": "{\r    \"method\": \"CloneVolume\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"name\": \"<Name of New Cloned Volume>\",\r        \"newAccountID\": <Optional New Account ID>,\r        \"newSize\": <Optional New Size in Bytes>,\r        \"access\": \"<Optional Access Level>\",\r        \"snapshotID\": <Optional ID of the Snapshot to be Used>,\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6280,14 +5791,14 @@
 							"raw": "{\r    \"method\": \"CompleteVolumePairing\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"volumePairingKey\": \"<Volume Pairing Key>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6308,14 +5819,14 @@
 							"raw": "{\r    \"method\": \"CopyVolume\",\r    \"params\": {\r        \"dstVolumeID\": <VolumeID of the Volume to Overwrite>,\r        \"volumeID\": <VolumeID of the volume to be read from>,\r        \"snapshotID\": <Optional ID of the Snapshot to use as Source of the Copy>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Overwrite the data contents of one volume with the data contents of another volume."
@@ -6337,14 +5848,14 @@
 							"raw": "{\r    \"method\": \"CreateBackupTarget\",\r    \"params\": {\r        \"name\": \"<Backup Target Name>\",\r        \"attributes\": {<Backup Target Parameters>}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6365,14 +5876,14 @@
 							"raw": "{\r    \"method\": \"CreateGroupSnapshot\",\r    \"params\": {\r        \"volumes\": [<CSV List of Volume IDs>],\r        \"name\": \"<Optional Group Snapshot Name>\",\r        \"enableRemoteReplication\": <Optional Boolean true or false>,\r        \"retention\": \"<Optional amount of time to retain the snapshot in HH:mm:ss>\",\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6393,14 +5904,14 @@
 							"raw": "{\r    \"method\": \"CreateInitiators\",\r    \"params\": {\r        \"initiators\": [\r        \t{\r        \t\t\"name\": \"<IQN or WWPN of Initiator to Create>\",\r            \t\"alias\": \"<Optional Friendly Name for Initiator>\",\r            \t\"chapUsername\": \"<Optional CHAP Username>\",\r            \t\"initiatorSecret\": \"<Optional CHAP initiator secret>\",\r            \t\"targetSecret\": \"<Optional CHAP target secret>\",\r            \t\"requireChap\": <Boolean true or false>,\r            \t\"volumeAccessGroupID\": <Optional ID of Destination AG for Initiator>,\r            \t\"attributes\": {}\r            }\r        ]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Create multiple new iSCSI or Fibre Channel initiators."
@@ -6422,14 +5933,14 @@
 							"raw": "{\r    \"method\": \"CreateQoSPolicy\",\r    \"params\": {\r        \"name\": \"<Name of QoS Policy>\",\r        \"qos\": {\r            \"minIOPS\": <Minimum IOPS>,\r            \"maxIOPS\": <Maximum IOPS>,\r            \"burstIOPS\": <Burst IOPS>\r        }\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Create multiple new iSCSI or Fibre Channel initiators."
@@ -6451,14 +5962,14 @@
 							"raw": "{\r    \"method\": \"CreateSchedule\",\r    \"params\": {\r        \"attributes\": {\r            \"frequency\": \"<One of: Time Interval, Days of Week or Days of Month>\"\r        },\r        \"hours\": <Optional Hours between snapshots, used for Time Interval mode>,\r        \"minutes\": <Optional Minutes between snapshots, used for Time Interval mode>,\r        \"paused\": <Optional Boolean true or false>,\r        \"recurring\": <Optional Boolean true or false>,\r        \"scheduleName\": \"<Name for the schedule>\",\r        \"scheduleType\": \"snapshot\",\r        \"scheduleInfo\": {\r            \"volumeID\": <Volume ID to be snapped>,\r            \"volumes\": [<CSV List of Volume IDs to be group snapped>],\r            \"name\": \"<Name of the snapshot>\",\r            \"enableRemoteReplication\": <Boolean true or false>\r            \"retention\": \"<Optional amount of time to retain the snapshot in HH:mm:ss>\"\r        },\r        \"startingDate\": \"<Optional Starting Date in ISO 8601 Format>\",\r        \"monthdays\": [<Optional CSV List of days to run>],\r        \"weekdays\": [\r            {\"day\": <Day Number>, \"offset\": 1},\r            {\"day\": <Day Number>, \"offset\": 1}\r        ]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6479,14 +5990,14 @@
 							"raw": "{\r    \"method\": \"CreateSnapshot\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"snapshotID\": <Optional Source Snapshot ID>,\r        \"name\": <Optional Snapshot Name>,\r        \"enableRemoteReplication\": <Optional Boolean true or false>,\r        \"retention\": \"<Optional amount of time to retain the snapshot in HH:mm:ss>\"\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6507,14 +6018,14 @@
 							"raw": "{\r    \"method\": \"CreateStorageContainer\",\r    \"params\": {\r        \"name\": \"<Name of new Storage Container>\",\r        \"accountID\": <Optional ID of Account to Assign to Storage Container>,\r        \"initiatorSecret\": \"<Optional CHAP Secret for Initiator>\",\r        \"targetSecret\": \"<Optional CHAP Secret for Target>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Create a Virtual Volume storage container."
@@ -6536,14 +6047,14 @@
 							"raw": "{\r    \"method\": \"CreateVolume\",\r    \"params\": {\r        \"name\": \"<Volume Name>\",\r        \"accountID\": <Account ID>,\r        \"totalSize\": <Volume Size in Bytes>,\r        \"enable512e\": <Boolean true or false>,\r        \"attributes\": {},\r        \"qos\": {\r            \"minIOPS\": <Optional Minimum IOPS>,\r            \"maxIOPS\": <Optional Maximum IOPS>,\r            \"burstIOPS\": <Optional Burst IOPS>,\r            \"burstTime\": 60\r        },\r        \"qosPolicyID\": <Optional QoS Policy ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6564,14 +6075,14 @@
 							"raw": "{\r    \"method\": \"CreateVolumeAccessGroup\",\r    \"params\": {\r        \"name\": \"<Volume Access Group Name>\",\r        \"initiators\": [<CSV List of Initiator IDs (integers) or Quoted IQNs or WWPNs (strings, deprecated)>],\r        \"volumes\": [<CSV List of Volume IDs>],\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6592,14 +6103,14 @@
 							"raw": "{\r    \"method\": \"DeleteGroupSnapshot\",\r    \"params\": {\r        \"groupSnapshotID\": <Group Snapshot ID>,\r        \"saveMembers\": <Boolean true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6620,14 +6131,14 @@
 							"raw": "{\r    \"method\": \"DeleteInitiators\",\r    \"params\": {\r        \"initiators\": [<CSV List of InitiatorIDs to Delete>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Delete one or more initiators from the system."
@@ -6649,14 +6160,14 @@
 							"raw": "{\r    \"method\": \"DeleteQoSPolicy\",\r    \"params\": {\r        \"qosPolicyID\": <QoS Policy ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Delete one or more initiators from the system."
@@ -6678,14 +6189,14 @@
 							"raw": "{\r    \"method\": \"DeleteSnapshot\",\r    \"params\": {\r        \"snapshotID\": <Snapshot ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6706,14 +6217,14 @@
 							"raw": "{\r    \"method\": \"DeleteStorageContainers\",\r    \"params\": {\r        \"storageContainerIDs\": [<CSV List of Storage Container IDs to Delete>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Remove one or more Virtual Volume storage containers from the system."
@@ -6735,14 +6246,14 @@
 							"raw": "{\r    \"method\": \"DeleteVolume\",\r    \"params\": {\r        \"volumeID\": <Volume ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6763,14 +6274,14 @@
 							"raw": "{\r    \"method\": \"DeleteVolumes\",\r    \"params\": {\r        \"volumeIDs\": [<Optional CSV List of Volume IDs>],\r        \"accountIDs\": [<Optional CSV List of Account IDs: All Volumes from These Accounts are Deleted>],\r        \"volumeAccessGroupIDs\": [<Optional CSV List of Volume Access Group IDs: all Volumes from These Volume Access Groups are Deleted>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Mark one or more volumes for removal from the system."
@@ -6792,14 +6303,14 @@
 							"raw": "{\r    \"method\": \"DeleteVolumeAccessGroup\",\r    \"params\": {\r        \"volumeAccessGroupID\": <Volume Access Group ID>,\r        \"deleteOrphanInitiators\": <Delete Initator Objects When Removed from Volume Access Group: Boolean true or false>,\r        \"force\": <Boolean true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6820,14 +6331,14 @@
 							"raw": "{\n\t\"method\": \"GetBackupTarget\",\n    \"params\": {\n        \"backupTargetID\": <Backup Target ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6848,14 +6359,14 @@
 							"raw": "{\n\t\"method\": \"GetQoSPolicy\",\n    \"params\": {\n        \"qosPolicyID\": <QoS Policy ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6876,14 +6387,14 @@
 							"raw": "{\n\t\"method\": \"GetSchedule\",\n    \"params\": {\n        \"scheduleID\": <Schedule ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6904,14 +6415,14 @@
 							"raw": "{\r    \"method\": \"GetStorageContainerEfficiency\",\r    \"params\": {\r        \"storageContainerID\": <ID of Storage Container>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Retrieve efficiency information about a Virtual Volume storage container."
@@ -6933,14 +6444,14 @@
 							"raw": "{\n\t\"method\": \"GetVirtualVolumeCount\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Retrieve the number of Virtual Volumes currently in the system."
@@ -6962,14 +6473,14 @@
 							"raw": "{\n\t\"method\": \"GetVolumeAccessGroupEfficiency\",\n    \"params\": {\n        \"volumeAccessGroupID\": <Volume Access Group ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -6990,14 +6501,14 @@
 							"raw": "{\n\t\"method\": \"GetVolumeAccessGroupLunAssignments\",\n    \"params\": {\n        \"volumeAccessGroupID\": <Volume Access Group ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7018,14 +6529,14 @@
 							"raw": "{\n\t\"method\": \"GetVolumeCount\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Retrieve the number of volumes currently in the system."
@@ -7047,14 +6558,14 @@
 							"raw": "{\n\t\"method\": \"GetVolumeEfficiency\",\n    \"params\": {\n        \"volumeID\": <Volume ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7075,14 +6586,14 @@
 							"raw": "{\n\t\"method\": \"GetVolumeStats\",\n    \"params\": {\n        \"volumeID\": <Volume ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7103,14 +6614,14 @@
 							"raw": "{\n\t\"method\": \"ListActivePairedVolumes\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7131,14 +6642,14 @@
 							"raw": "{\n\t\"method\": \"ListActiveVolumes\",\n    \"params\": {\n        \"startVolumeID\": <Optional Starting Volume ID>,\n        \"limit\": <Optional Maximum Number of Volumes to Return>,\n        \"includeVirtualVolumes\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7159,14 +6670,14 @@
 							"raw": "{\n\t\"method\": \"ListBackupTargets\",\n    \"params\": {},\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7187,14 +6698,14 @@
 							"raw": "{\n\t\"method\": \"ListDeletedVolumes\",\n    \"params\": {\n    \t\"includeVirtualVolumes\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7215,14 +6726,14 @@
 							"raw": "{\n\t\"method\": \"ListGroupSnapshots\",\n    \"params\": {\n        \"volumes\": [<CSV List of Volumes to Include>]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7243,14 +6754,14 @@
 							"raw": "{\n\t\"method\": \"ListInitiators\",\n    \"params\": {\n        \"startInitiatorID\": <Optional Starting Initiator ID>,\n        \"limit\": <Optional Maximum Number of Initiators to Return>,\n        \"initiators\": [<Optional CSV List of Initiator IDs>]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "List initiator IQNs or WWPNs in the system."
@@ -7272,14 +6783,14 @@
 							"raw": "{\n\t\"method\": \"ListProtocolEndpoints\",\n    \"params\": {\n    \t\"protocolEndpointIDs\": [\"Optional CSV List of Protocol Endpoint IDs\"]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Retrieve information about all protocol endpoints in the cluster."
@@ -7301,14 +6812,14 @@
 							"raw": "{\n\t\"method\": \"ListQoSPolicies\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Retrieve information about all protocol endpoints in the cluster."
@@ -7330,14 +6841,14 @@
 							"raw": "{\n\t\"method\": \"ListSchedules\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7358,14 +6869,14 @@
 							"raw": "{\n\t\"method\": \"ListSnapshots\",\n    \"params\": {\n        \"volumeID\": <Optional Volume ID>,\n        \"snapshotID\": <Optional Snapshot ID>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7386,14 +6897,14 @@
 							"raw": "{\n\t\"method\": \"ListStorageContainers\",\n    \"params\": {\n    \t\"storageContainerIDs\": [\"Optional CSV List of Storage Container IDs\"]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Retrieve information about all Virtual Volume storage containers known to the system."
@@ -7415,14 +6926,14 @@
 							"raw": "{\n\t\"method\": \"ListVirtualVolumes\",\n    \"params\": {\n    \t\"details\": <Include more details about each Virtual Volume: true or false (Default = false)>,\n    \t\"limit\": <Optional max number of results>,\n    \t\"recursive\": <Include VVol children information: true or false (Default = false)>,\n    \t\"startVirtualVolumeID\": \"<Optional ID of Virtual Volume at Which to Begin List>\",\n    \t\"virtualVolumeIDs\": [\"Optional CSV List of Virtual Volume IDs\"]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "List the Virtual Volumes currently in the system. "
@@ -7444,14 +6955,14 @@
 							"raw": "{\n\t\"method\": \"ListVirtualVolumeBindings\",\n    \"params\": {\n    \t\"virtualVolumeBindingIDs\": [\"Optional CSV List of Virtual Volume Binding IDs\"]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "List all Virtual Volumes in the cluster that are bound to protocol endpoints."
@@ -7473,14 +6984,14 @@
 							"raw": "{\n\t\"method\": \"ListVirtualVolumeHosts\",\n    \"params\": {\n    \t\"virtualVolumeHostIDs\": [\"Optional CSV List of Virtual Volume Host IDs\"]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "List all Virtual Volume hosts known to the cluster."
@@ -7502,14 +7013,14 @@
 							"raw": "{\n\t\"method\": \"ListVirtualVolumeTasks\",\n    \"params\": {\n    \t\"virtualVolumeHostIDs\": [\"Optional CSV List of Virtual Volume Task IDs\"]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "List all Virtual Volume tasks in the system."
@@ -7531,14 +7042,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumeAccessGroups\",\n    \"params\": { },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7559,14 +7070,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumeQoSHistograms\",\n    \"params\": {\n        \"volumeIDs\": [<Optional CSV List of Volume IDs>]\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7587,14 +7098,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumes\",\n    \"params\": {\n        \"startVolumeID\": <Optional Starting Volume ID>,\n        \"accounts\": [<List of accountIDs>],\n        \"isPaired\": <Return paired volumes: true, Return unpaired volumes: false>,\n        \"volumeStatus\": \"<creating, snapshotting, active, or deleted>\",\n        \"limit\": <Optional Maximum Number of Volumes to Return>,\n        \"volumeName\": \"<Optional Volume Name>\"\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7615,14 +7126,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumes\",\n    \"params\": {\n        \"volumeIDs\": [<A list of volumeIDs>],\n        \"volumeName\": \"<Optional Volume Name>\",\n        \"isPaired\": <Return paired volumes: true, Return unpaired volumes: false>,\n        \"volumeStatus\": \"<creating, snapshotting, active, or deleted>\",\n        \"volumeName\": \"<Optional Volume Name>\",\n        \"includeVirtualVolumes\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7643,14 +7154,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumeStats\",\n    \"params\": {\n        \"volumeIDs\": [<Optional CSV List of Volume IDs>],\n        \"includeVirtualVolumes\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7671,14 +7182,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumeStatsByAccount\",\n    \"params\": {\n    \t\"includeVirtualVolumes\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7699,14 +7210,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumeStatsByVolume\",\n    \"params\": {\n    \t\"includeVirtualVolumes\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7727,14 +7238,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumeStatsByVirtualVolume\",\n    \"params\": {\n        \"virtualVolumeIDs\": [<Optional CSV List of Virtual Volume IDs>]    \n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "List volume statistics for Virtual Volumes."
@@ -7756,14 +7267,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumeStatsByVolumeAccessGroup\",\n    \"params\": {\n    \t\"includeVirtualVolumes\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7784,14 +7295,14 @@
 							"raw": "{\n\t\"method\": \"ListVolumesForAccount\",\n    \"params\": {\n        \"accountID\": <Account ID>,\n        \"includeVirtualVolumes\": <Boolean true or false>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7812,14 +7323,14 @@
 							"raw": "{\r    \"method\": \"ModifyBackupTarget\",\r    \"params\": {\r        \"backupTargetID\": <Backup Target ID>,\r        \"name\": \"<Optional New Backup Target Name>\",\r        \"attributes\": {<Optional Updated Backup Target Parameters>}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7840,14 +7351,14 @@
 							"raw": "{\r    \"method\": \"ModifyGroupSnapshot\",\r    \"params\": {\r        \"groupSnapshotID\": <Group Snapshot ID>,\r        \"enableRemoteReplication\": <Optional Boolean true or false>,\r        \"expirationTime\": \"<Optional amount of time to retain the snapshot in ISO 8601 format>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7868,14 +7379,14 @@
 							"raw": "{\r    \"method\": \"ModifyInitiators\",\r    \"params\": {\r        \"initiators\": [\r        \t{\r        \t\t\"initiatorID\": <Initiator ID>,\r        \t\t\"alias\": \"<Optional Friendly Name for Initiator>\",\r            \t\"chapUsername\": \"<Optional CHAP Username>\",\r            \t\"initiatorSecret\": \"<Optional CHAP initiator secret>\",\r            \t\"targetSecret\": \"<Optional CHAP target secret>\",\r            \t\"requireChap\": <Boolean true or false>,\r            \t\"volumeAccessGroupID\": <Optional ID of Destination AG for Initiator>,\r            \t\"attributes\": {}\r        \t}\r        ]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Change the attributes of one or more existing initiators."
@@ -7897,14 +7408,14 @@
 							"raw": "{\r    \"method\": \"ModifyQoSPolicy\",\r    \"params\": {\r    \t\"qosPolicyID\": <QoS Policy ID>,\r        \"name\": \"<Optional Name of QoS Policy>\",\r        \"qos\": {\r            \"minIOPS\": <Optional Minimum IOPS>,\r            \"maxIOPS\": <Optional Maximum IOPS>,\r            \"burstIOPS\": <Optional Burst IOPS>\r        }\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Change the attributes of one or more existing initiators."
@@ -7926,14 +7437,14 @@
 							"raw": "{\r    \"method\": \"ModifySchedule\",\r    \"params\": {\r        \"attributes\": {\r            \"frequency\": \"<One of: Time Interval, Days of Week, Days of Month>\"\r        },\r        \"hours\": <Optional Hours between snapshots, used for Time Interval mode>,\r        \"minutes\": <Optional Minutes between snapshots, used for Time Interval mode>,\r        \"paused\": <Optional Boolean true or false>,\r        \"recurring\": <Optional Boolean true or false>,\r        \"runNextInterval\": <Optional Boolean true or false>,\r        \"scheduleID\": <The ID of the schedule being modified>,\r        \"scheduleName\": \"<Name for the schedule>\",\r        \"scheduleType\": \"snapshot\",\r        \"scheduleInfo\": {\r            \"volumeID\": <Volume ID to be snapped>,\r            \"volumes\": [<CSV List of Volume IDs to be group snapped>],\r            \"name\": \"<Name of the snapshot>\",\r            \"enableRemoteReplication\": <Boolean true or false>\r            \"retention\": \"<Optional amount of time to retain the snapshot in HH:mm:ss>\"\r        },\r        \"startingDate\": \"<Optional Starting Date in ISO 8601 Format>\",\r        \"toBeDeleted\": <Optional Boolean true or false>,\r        \"monthdays\": [<Optional CSV List of days to run>],\r        \"weekdays\": [\r            {\"day\": <Day Number>, \"offset\": 1},\r            {\"day\": <Day Number>, \"offset\": 1}\r        ]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7954,14 +7465,14 @@
 							"raw": "{\r    \"method\": \"ModifySnapshot\",\r    \"params\": {\r        \"snapshotID\": <Snapshot ID>,\r        \"enableRemoteReplication\": <Optional Boolean true or false>,\r        \"expirationTime\": \"<Optional amount of time to retain the snapshot in ISO 8601 format>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -7982,14 +7493,14 @@
 							"raw": "{\r    \"method\": \"ModifyStorageContainer\",\r    \"params\": {\r        \"storageContainerID\": <Storage Container ID>,\r        \"initiatorSecret\": \"<Optional CHAP Secret for Initiator>\",\r        \"targetSecret\": \"<Optional CHAP Secret for Target>\"       \t\r        }\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Make changes to an existing Virtual Volume storage container."
@@ -8011,14 +7522,14 @@
 							"raw": "{\r    \"method\": \"ModifyVolume\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"accountID\": <Optional New Account ID for Volume>,\r        \"totalSize\": <Optional New Volume Size in Bytes>,\r        \"setCreateTime\": <true to Set New Creation Time for the Volume>,\r        \"createTime\": \"<Optional New Creation Time for the Volume if setCreateTime is true>\",\r        \"access\": \"<Optional Allowed Access for the Volume: One of readOnly, readWrite, locked, replicationTarget>\",\r        \"attributes\": {},\r        \"qos\": {\r            \"minIOPS\": <Optional Minimum IOPS>,\r            \"maxIOPS\": <Optional Maximum IOPS>,\r            \"burstIOPS\": <Optional Burst IOPS>,\r            \"burstTime\": 60\r        },\r        \"qosPolicyID\": <Optional QoS Policy ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8039,14 +7550,14 @@
 							"raw": "{\r    \"method\": \"ModifyVolumes\",\r    \"params\": {\r        \"volumeIDs\": [<CSV List of Volume IDs to Modify>],\r        \"accountID\": <Optional New Account ID for Volumes>,\r        \"totalSize\": <Optional New Volume Size in Bytes>,\r        \"setCreateTime\": <true to Set New Creation Time for the Volumes>,\r        \"createTime\": \"<Optional New Creation Time for the Volumes if setCreateTime is true>\",\r        \"access\": \"<Optional Allowed Access for the Volumes: One of readOnly, readWrite, locked, replicationTarget>\",\r        \"attributes\": {},\r        \"qos\": {\r            \"minIOPS\": <Optional Minimum IOPS>,\r            \"maxIOPS\": <Optional Maximum IOPS>,\r            \"burstIOPS\": <Optional Burst IOPS>,\r            \"burstTime\": 60\r        },\r        \"qosPolicyID\": <Optional QoS Policy ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Change the configuration of one or more volumes at a time."
@@ -8068,14 +7579,14 @@
 							"raw": "{\r    \"method\": \"ModifyVolumeAccessGroup\",\r    \"params\": {\r        \"volumeAccessGroupID\": <Volume Access Group ID>,\r        \"name\": \"<Optional Volume Access Group Name>\",\r        \"initiators\": [\r            <CSV List of Initiator IDs (integers) or Quoted IQNs or WWPNs (strings, deprecated)>\r        ],\r        \"deleteOrphanInitiators\": <Delete initiator objects After Removal from Volume Access Group: true or false>,\r        \"volumes\": [\r            <Optional CSV List of Volume IDs>\r        ],\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8096,14 +7607,14 @@
 							"raw": "{\r    \"method\": \"ModifyVolumeAccessGroupLunAssignments\",\r    \"params\": {\r        \"volumeAccessGroupID\": <Volume Access Group ID>,\r        \"lunAssignments\": [\r            { \"volumeID\": <Volume ID>, \"lun\": <LUN ID> },\r            { \"volumeID\": <Volume ID>, \"lun\": <LUN ID> },\r            { \"volumeID\": <Volume ID>, \"lun\": <LUN ID> }\r        ]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8124,14 +7635,14 @@
 							"raw": "{\r    \"method\": \"ModifyVolumePair\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"pausedManual\": <Boolean true or false>,\r        \"mode\": \"<Volume Replication Mode: Async, Sync, or SnapshotsOnly>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8152,14 +7663,14 @@
 							"raw": "{\r    \"method\": \"PurgeDeletedVolume\",\r    \"params\": {\r        \"volumeID\": <Volume ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8180,14 +7691,14 @@
 							"raw": "{\r    \"method\": \"PurgeDeletedVolumes\",\r    \"params\": {\r        \"volumeIDs\": [<Optional List of Volume IDs to Purge>],\r        \"accountIDs\": [<Optional List of Account IDs to Purge From>],\r        \"volumeAccessGroupIDs\": [<Optional list of Volume Access Group IDs to Purge From>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Immediately and permanently purges volumes that have been marked for deletion."
@@ -8209,14 +7720,14 @@
 							"raw": "{\r    \"method\": \"RemoveBackupTarget\",\r    \"params\": {\r        \"backupTargetID\": <Backup Target ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8237,14 +7748,14 @@
 							"raw": "{\r    \"method\": \"RemoveInitiatorsFromVolumeAccessGroup\",\r    \"params\": {\r        \"volumeAccessGroupID\": <Volume Access Group ID>,\r        \"initiators\": [<CSV List of Initiator IDs (integers) or Quoted IQNs or WWPNs (strings, deprecated)>],\r        \"deleteOrphanInitiators\": <Delete initiator objects After Removal from Volume Access Group: true or false>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8265,14 +7776,14 @@
 							"raw": "{\r    \"method\": \"RemoveVolumePair\",\r    \"params\": {\r        \"volumeID\": <Volume ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8293,14 +7804,14 @@
 							"raw": "{\r    \"method\": \"RemoveVolumesFromVolumeAccessGroup\",\r    \"params\": {\r        \"volumeAccessGroupID\": <Volume Access Group ID>,\r        \"volumes\": [<CSV List of Volume IDs>]\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8321,14 +7832,14 @@
 							"raw": "{\r    \"method\": \"RestoreDeletedVolume\",\r    \"params\": {\r        \"volumeID\": <Volume ID>\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8349,14 +7860,14 @@
 							"raw": "{\r    \"method\": \"RollbackToGroupSnapshot\",\r    \"params\": {\r        \"groupSnapshotID\": <Group Snapshot ID>,\r        \"name\": \"<Optional Group Snapshot Name if Saving State>\",\r        \"saveCurrentState\": <Boolean true or false>,\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8377,14 +7888,14 @@
 							"raw": "{\r    \"method\": \"RollbackToSnapshot\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"snapshotID\": <Snapshot ID>,\r        \"name\": \"<Optional Name for the Snapshot if Saving State>\",\r        \"saveCurrentState\": <Boolean true or false>,\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8405,14 +7916,14 @@
 							"raw": "{\n\t\"method\": \"SetDefaultQoS\",\n    \"params\": {\n    \t\"minIOPS\": <Minimum sustained IOPS for the Volume>,\n    \t\"maxIOPS\": <Maximum sustained IOPS for the Volume>,\n    \t\"burstIOPS\": <Maximum IOPS Allowed During Short Burst>\n    },\n    \"id\": 1\n}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						},
 						"description": "Configure the default Quality of Service (QoS) values for a volume."
@@ -8434,14 +7945,14 @@
 							"raw": "{\r    \"method\": \"StartBulkVolumeRead\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"format\": \"<Either native or uncompressed>\",\r        \"snapshotID\": <Snapshot ID>,\r        \"script\": \"<Optional script name>\",\r        \"scriptParameters\": <JSON Formatted Script Parameters>,\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8462,14 +7973,14 @@
 							"raw": "{\r    \"method\": \"StartBulkVolumeWrite\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"format\": \"<Either native or uncompressed>\",\r        \"script\": \"<Optional script name>\",\r        \"scriptParameters\": <JSON Formatted Script Parameters>,\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8490,14 +8001,14 @@
 							"raw": "{\r    \"method\": \"StartVolumePairing\",\r    \"params\": {\r        \"volumeID\": <Volume ID>,\r        \"mode\": \"<Volume Replication Mode: Async, Sync, or SnapshotsOnly>\"\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
@@ -8518,21 +8029,20 @@
 							"raw": "{\r    \"method\": \"UpdateBulkVolumeStatus\",\r    \"params\": {\r        \"key\": \"<Bulk Volume Job Key>\",\r        \"status\": \"<Bulk Volume Job Status>\",\r        \"percentComplete\": \"<Optional Percent Complete>\",\r        \"message\": \"<Bulk Volume Job Status Message>\",\r        \"attributes\": {}\r    },\r    \"id\": 1\r}"
 						},
 						"url": {
-							"raw": "https://{{MVIP}}/json-rpc/11.7",
+							"raw": "https://{{MVIP}}/json-rpc/11.3",
 							"protocol": "https",
 							"host": [
 								"{{MVIP}}"
 							],
 							"path": [
 								"json-rpc",
-								"11.7"
+								"11.3"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
 	],
 	"event": [
@@ -8556,6 +8066,5 @@
 				]
 			}
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }

@@ -1076,7 +1076,7 @@
 			"headers": "Content-Type: application/json",
 			"dataMode": "raw",
 			"data": [],
-			"rawModeData": "{\r    \"method\": \"CreateVolume\",\r    \"params\": {\r        \"name\": \"<Volume Name>\",\r        \"accountID\": <Account ID>,\r        \"totalSize\": <Volume Size in Bytes>,\r        \"enable512e\": <Optional Boolean true or false>,\r        \"attributes\": {},\r        \"qos\": {\r            \"minIOPS\": <Optional Minimum IOPS>,\r            \"maxIOPS\": <Optional Maximum IOPS>,\r            \"burstIOPS\": <Optional Burst IOPS>,\r            \"burstTime\": 60\r        }\r    },\r    \"id\": 1\r}",
+			"rawModeData": "{\r    \"method\": \"CreateVolume\",\r    \"params\": {\r        \"name\": \"<Volume Name>\",\r        \"accountID\": <Account ID>,\r        \"totalSize\": <Volume Size in Bytes>,\r        \"enable512e\": <Boolean true or false>,\r        \"attributes\": {},\r        \"qos\": {\r            \"minIOPS\": <Optional Minimum IOPS>,\r            \"maxIOPS\": <Optional Maximum IOPS>,\r            \"burstIOPS\": <Optional Burst IOPS>,\r            \"burstTime\": 60\r        }\r    },\r    \"id\": 1\r}",
 			"url": "https://{{MVIP}}/json-rpc/9.0",
 			"responses": [],
 			"folder": "40add30e-b35a-0489-2136-eb38183afa15"
@@ -2297,7 +2297,7 @@
 			"headers": "Content-Type: application/json",
 			"dataMode": "raw",
 			"data": [],
-			"rawModeData": "{\n\t\"method\": \"ListAsyncResults\",\n    \"params\": {\n        \"asyncResultTypes\": [\"<Optional CSV List of Result Types: One or more of BulkVolume, Clone, DriveRemoval, or RtfiPendingNode>\"]\n    },\n    \"id\": 1\n}",
+			"rawModeData": "{\n\t\"method\": \"ListAsyncResults\",\n    \"params\": {\n        \"asyncResultTypes\": [\"<Optional CSV List of Result Types: One or more of BulkVolume, Clone, DriveAdd, DriveRemoval, or RtfiPendingNode>\"]\n    },\n    \"id\": 1\n}",
 			"url": "https://{{MVIP}}/json-rpc/9.0",
 			"responses": [],
 			"folder": "98ce82cf-8028-53fb-8c92-f1390620bc02"

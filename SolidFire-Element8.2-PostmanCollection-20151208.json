@@ -455,7 +455,7 @@
 			"collectionId": "e9243a62-2240-4790-294c-9a586d2c1b5e",
 			"responses": [],
 			"folder": "3fed65c1-9084-4cb6-e1f6-70ce0aae49cd",
-			"rawModeData": "{\r    \"method\": \"CreateVolume\",\r    \"params\": {\r        \"name\": \"<Volume Name>\",\r        \"accountID\": <Account ID>,\r        \"totalSize\": <Volume Size in Bytes>,\r        \"enable512e\": <Optional Boolean true or false>,\r        \"attributes\": {},\r        \"qos\": {\r            \"minIOPS\": <Optional Minimum IOPS>,\r            \"maxIOPS\": <Optional Maximum IOPS>,\r            \"burstIOPS\": <Optional Burst IOPS>,\r            \"burstTime\": 60\r        }\r    },\r    \"id\": 1\r}"
+			"rawModeData": "{\r    \"method\": \"CreateVolume\",\r    \"params\": {\r        \"name\": \"<Volume Name>\",\r        \"accountID\": <Account ID>,\r        \"totalSize\": <Volume Size in Bytes>,\r        \"enable512e\": <Boolean true or false>,\r        \"attributes\": {},\r        \"qos\": {\r            \"minIOPS\": <Optional Minimum IOPS>,\r            \"maxIOPS\": <Optional Maximum IOPS>,\r            \"burstIOPS\": <Optional Burst IOPS>,\r            \"burstTime\": 60\r        }\r    },\r    \"id\": 1\r}"
 		},
 		{
 			"id": "0c8371db-d18b-2b0c-00ce-b85c5fc0d738",
